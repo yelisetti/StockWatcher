@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta http-equiv="refresh" content="10" >
+<html>
+<head>
+<title>Test App</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+
+    <table>
+        <tr>
+            <td>Ticker</td>
+            <td>Price</td>
+        </tr>
+    {% for key, value in stocks_dict.items() %}
+        <tr>
+            <td>{{ key }} </td>
+            <td>{{ value }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+</body>
+</html>
